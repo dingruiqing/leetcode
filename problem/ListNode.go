@@ -3,11 +3,11 @@ package problem
 import "fmt"
 
 type ListNode struct {
-	Val  interface{}
+	Val  int
 	Next *ListNode
 }
 
-func BuildListNode(nums []interface{}) *ListNode {
+func BuildListNode(nums []int) *ListNode {
 	var b *ListNode
 	for i := len(nums) - 1; i >= 0; i-- {
 		a := &ListNode{nums[i], b}
