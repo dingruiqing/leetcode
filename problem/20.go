@@ -1,7 +1,7 @@
 package problem
 
 func IsValid(s string) bool {
-	st := New()
+	st := NewStack()
 	for _, v := range s {
 		str := string(v)
 		if str == "(" || str == "{" || str == "[" {

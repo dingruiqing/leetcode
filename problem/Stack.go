@@ -5,7 +5,7 @@ type Stack struct {
 	length int
 }
 
-func New() *Stack {
+func NewStack() *Stack {
 	return &Stack{nil, 0}
 }
 
