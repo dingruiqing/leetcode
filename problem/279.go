@@ -1,25 +1,17 @@
 package problem
 
 func NumSquares(n int) int {
-	a := []int{n}
-	squareList := []int{}
-	for j := 1; n >= j*j; j++ {
-		squareList = append(squareList, j*j)
+	nums := make([]int, n+1)
+	for i, _ := range nums {
+		nums[i] = n
 	}
-	level := 0
-	for {
-		b := []int{}
-		for _, value := range a {
-			if value == 0 {
-				return level
-			}
-			for _, v := range squareList {
-				if v <= value {
-					b = append(b, value-v)
-				}
+	nums[0] = 0
+	for i := 1; i <= n; i++ {
+		for j := 1; i >= j*j; j++ {
+			if nums[i-j*j]+1 < nums[i] {
+				nums[i] = nums[i-j*j] + 1
 			}
 		}
-		level++
-		a = b
 	}
+	return nums[n]
 }
