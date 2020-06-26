@@ -6,5 +6,12 @@ import (
 )
 
 func main() {
-	fmt.Println(problem.MinPathSum([][]int{{1, 3, 1}, {1, 5, 1}, {4, 2, 1}}))
+	pointMap := make(map[int]map[int]bool)
+	for i := 0; i <= 3; i++ {
+		pointMap[i] = make(map[int]bool)
+	}
+	pointMap[1][2] = true
+	_, ok := pointMap[1][3]
+	fmt.Println(ok)
+	fmt.Println(problem.UniquePaths(3, 2))
 }
