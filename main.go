@@ -6,6 +6,5 @@ import (
 )
 
 func main() {
-	fmt.Println(problem.IsPalindrome2(1000010001))
-
+	fmt.Println(problem.MinPathSum([][]int{{1, 3, 1}, {1, 5, 1}, {4, 2, 1}}))
 }

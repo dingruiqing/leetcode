@@ -1,6 +1,6 @@
 package problem
 
-func levelOrder(root *TreeNode) [][]int {
+func LevelOrder(root *TreeNode) [][]int {
 	var nums [][]int
 	if root == nil {
 		return nums
