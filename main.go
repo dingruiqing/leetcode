@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"leetcode/problem"
+	"math"
 )
 
 func main() {
@@ -10,6 +11,7 @@ func main() {
 	for i := 0; i <= 3; i++ {
 		pointMap[i] = make(map[int]bool)
 	}
+	a := math.MinInt32
 	pointMap[1][2] = true
 	_, ok := pointMap[1][3]
 	fmt.Println(ok)
