@@ -2,9 +2,12 @@ package main
 
 import (
 	"fmt"
-	"leetcode/problem"
 )
 
 func main() {
-	fmt.Println(problem.FindKthLargest([]int{3, 2, 3, 1, 2, 4, 5, 5, 6}, 4))
+	m1 := [1]int{}
+	m1[0] = 1
+	m2 := [1]int{}
+	m2[0] = 1
+	fmt.Println(m1 == m2)
 }

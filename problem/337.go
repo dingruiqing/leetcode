@@ -43,13 +43,6 @@ package problem
 //	return a
 //}
 
-func max(a, b int) int {
-	if a > b {
-		return a
-	}
-	return b
-}
-
 func rob(root *TreeNode) int {
 	res := robInternal(root)
 	return max(res[0], res[1])
