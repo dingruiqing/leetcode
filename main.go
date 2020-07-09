@@ -1,13 +1,11 @@
 package main
 
 import (
-	"fmt"
+	"leetcode/problem"
 )
 
 func main() {
-	m1 := [1]int{}
-	m1[0] = 1
-	m2 := [1]int{}
-	m2[0] = 1
-	fmt.Println(m1 == m2)
+	h := problem.BuildListNode([]int{4, 2, 3, 1})
+
+	problem.PrintListNode(problem.SortList(h))
 }
