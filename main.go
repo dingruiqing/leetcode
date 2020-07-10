@@ -1,11 +1,9 @@
 package main
 
 import (
-	"leetcode/problem"
+	"fmt"
 )
 
 func main() {
-	h := problem.BuildListNode([]int{4, 2, 3, 1})
-
-	problem.PrintListNode(problem.SortList(h))
+	fmt.Println()
 }
