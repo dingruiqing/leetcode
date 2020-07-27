@@ -1,6 +1,6 @@
 package problem
 
-func LadderLength(beginWord string, endWord string, wordList []string) int {
+func LadderLength2(beginWord string, endWord string, wordList []string) int {
 	n := len(wordList)
 	m := len(beginWord)
 	if n == 0 || m != len(endWord) {
